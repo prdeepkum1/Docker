@@ -9,7 +9,7 @@ const app = express()
 // dotenv.config();
 app.use(express.static("public"))
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ;
 
 const httpServer = createServer(app)
 
