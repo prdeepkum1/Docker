@@ -9,7 +9,7 @@ const app = express()
 dotenv.config();
 app.use(express.static("public"))
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 const httpServer = createServer(app)
 
@@ -33,6 +33,6 @@ app.get('/health', (req, res) => {
 })
 
 
-httpServer.listen(PORT, () => {
+httpServer.listen(PORT, "0.0.0.0", () => {
     console.log(`Server is running on ${PORT}`)
 })

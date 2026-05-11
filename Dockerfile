@@ -28,6 +28,6 @@ RUN npm install
 
 COPY --from=frontend-builder /app/dist /app/public
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["node", "server.js"]
