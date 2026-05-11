@@ -46,7 +46,7 @@ function App() {
 
     if (username) {
 
-      const provider = new SocketIOProvider("/", "monaco", ydoc, {
+      const provider = new SocketIOProvider("https://docker-production-ab24.up.railway.app", "monaco", ydoc, {
         autoConnect: true,
       })
 
